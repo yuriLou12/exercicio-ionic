@@ -12,8 +12,17 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    path: 'servicos',
+    loadChildren: './servicos/servicos.module#servicosPageModule'
+  },
+  {
+    path: 'cadCliente',
+    loadChildren: './cadCliente/cadCliente.module#cadClientePageModule'
+  },
+
+  {
+    path: 'cadProfissional',
+    loadChildren: './cadProfissional/cadProfissional.module#cadProfissionalPageModule'
   }
 ];
 

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+     Cadastro Cliente
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+  <form (ngSubmit)="logForm()">
+      <ion-item>
+          <ion-label>Nome </ion-label>
+          <ion-input type="text" [(ngModel)]="cliente.title" name="title"></ion-input>
+        </ion-item>
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.title" name="title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Senha</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.title" name="title"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Serviços desejados</ion-label>
+      <ion-textarea [(ngModel)]="cliente.description" name="description"></ion-textarea>
+    </ion-item>
+
+     <button ion-button type="submit" block>Cadastrar</button>
+  </form>
+
+
+
+</ion-content>

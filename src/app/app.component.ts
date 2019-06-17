@@ -16,9 +16,21 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Serviços',
+      url: '/servicos',
+      icon: 'construct'
+    },
+
+    {
+      title: 'Cadastro Cliente',
+      url: '/cadCliente',
+      icon: 'mail'
+    },
+
+    {
+      title: 'Cadastro Profissional',
+      url: '/cadProfissional',
+      icon: 'mail'
     }
   ];
 
