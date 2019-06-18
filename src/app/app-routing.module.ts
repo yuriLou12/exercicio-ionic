@@ -23,6 +23,11 @@ const routes: Routes = [
   {
     path: 'cadProfissional',
     loadChildren: './cadProfissional/cadProfissional.module#cadProfissionalPageModule'
+  },
+
+  {
+    path: 'suporte',
+    loadChildren: './suporte/suporte.module#suportePageModule'
   }
 ];
 
