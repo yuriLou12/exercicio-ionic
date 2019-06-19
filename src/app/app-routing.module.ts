@@ -28,6 +28,21 @@ const routes: Routes = [
   {
     path: 'suporte',
     loadChildren: './suporte/suporte.module#suportePageModule'
+  },
+
+  {
+    path: 'reparo',
+    loadChildren: './reparo/reparo.module#reparoPageModule'
+  },
+
+  {
+    path: 'eletrico',
+    loadChildren: './eletrico/eletrico.module#eletricoPageModule'
+  },
+
+  {
+    path: 'entrega',
+    loadChildren: './entrega/entrega.module#entregaPageModule'
   }
 ];
 
