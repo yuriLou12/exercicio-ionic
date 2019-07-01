@@ -1,5 +1,7 @@
 {
   "name": "servicosapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

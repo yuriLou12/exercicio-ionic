@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -8,6 +8,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+
+import {SQLite, SQLiteObject} from '@ionic-native/sqlite';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +23,13 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    SQLiteObject,
+
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy
+    },
+  {
+    provide: LOCALE_ID, useValue: 'pt-BR',
+  }
   ],
   bootstrap: [AppComponent]
 })
